@@ -7,7 +7,7 @@ const {MongoClient , ObjectId} = require('mongodb')
 const id = new ObjectId()
 console.log(id.getTimestamp())
 const connectionURL = process.env.MONGODB_URL
-const databaseName = 'task-manager-app'
+const databaseName = 'task-manager-api'
 //connection is not a synchronous action it is async
 MongoClient.connect(connectionURL , {useNewUrlParser : true} , (error,client)=>{
     if(error){
