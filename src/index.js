@@ -1,4 +1,5 @@
 const express = require('express')
+const path = require('path')
 const cookieparser = require('cookie-parser')
 require('./db/mongoose')
 const cors = require('cors')
@@ -35,11 +36,11 @@ app.use(TaskRouter)
 
 //heroku
 if(process.env.NODE_ENV === 'production'){
-    const path = require('path')
+    
 
     app.use(express.static(path.join(__dirname, '/client/build')))
 
-    app.get('/*', (req, res) => {
+    app.get('/', (req, res) => {
     res.sendFile(path.join((__dirname, '/client/build/index.html')))
     })
 }
