@@ -24,6 +24,7 @@ input{
 #LoginPage{
   justify-content: center;
   display: flex;
+  height: 80vh;
 }
 
 .Login{
@@ -113,6 +114,7 @@ input{
 .signuppage{
   display: flex;
   justify-content: center;
+  height: 80vh;
 }
 .Signup{
   display: flex;
@@ -152,11 +154,11 @@ input{
 }
 .footer-heading{
   font-weight: bolder;
-  color: orange;
+  color: rgb(221, 209, 188);
 }
 .line{
   width: 85%;
-  border: 1px rgb(224, 173, 30) solid;
+  border: 1px rgb(221,209,200) solid;
   border-radius: 10px;
   margin-top: 0;
   opacity: 10!important;
@@ -212,12 +214,19 @@ input{
 .card i {
   padding-right: .2rem;
 }
+.contactpage{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 60vh;
+}
 .contact{
   display: flex;
   justify-content: center;
+
 }
 .contact-form{
-  margin: 5rem;
+  margin: 3rem;
   padding: 1rem;
   background-color: white;
   display: flex;

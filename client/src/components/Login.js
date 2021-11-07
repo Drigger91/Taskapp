@@ -53,8 +53,9 @@ function Login() {
         }
     return (
         <div id='LoginPage'>
-        <div className='Login'>
-        <div className='image'> <img src={login}></img> <br/></div>
+        <div className='Signup'>
+        <div className='animation'> <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+<lottie-player src="https://assets3.lottiefiles.com/packages/lf20_jcikwtux.json"  background="transparent"  speed=".5"   loop  autoplay></lottie-player> <br/></div>
         <div>
         <form className='text-align-center' method="POST">
         <h3> <b>Log-In</b> </h3>

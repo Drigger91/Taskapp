@@ -3,6 +3,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 function Contact() {
     return (
+        <div className='contactpage'>
         <div className='contact'>
         <div className='contact-form'>
             <h1 className='form-heading'>Get in Touch</h1> <hr/>
@@ -25,7 +26,7 @@ function Contact() {
                 <textarea class="form-control" id="exampleFormControlTextarea1" ></textarea>
             </div>
             <button className='btn btn-primary'>Send Message</button>
-</div></div>
+</div></div></div>
     )
 }
 
