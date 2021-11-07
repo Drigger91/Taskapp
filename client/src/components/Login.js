@@ -52,12 +52,12 @@ function Login() {
          
         }
     return (
-        <>
-        <h1 className='loginheader'>Welcome to the Task-App login here! </h1>
+        <div id='LoginPage'>
         <div className='Login'>
-    <form className='text-align-center' method="POST">
+        <div className='image'> <img src={login}></img> <br/></div>
+        <div>
+        <form className='text-align-center' method="POST">
         <h3> <b>Log-In</b> </h3>
-        <div> <img src={login}></img></div>
        
   <div className="mb-3">
     <label for="exampleInputEmail1" className="form-label">Email </label>
@@ -71,7 +71,9 @@ function Login() {
 
 </form>
         </div>
-        </>
+   
+        </div>
+        </div>
     )
 }
 

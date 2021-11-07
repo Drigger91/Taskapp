@@ -56,33 +56,39 @@ function Signup() {
 
     }
     return (
-        <div className='Login'>
-            <form method="POST">
+      <div className='signuppage'>
+        <div className='Signup'>
+                    <div className='animation'> <br/> <br/>
+                                <lottie-player src="https://assets2.lottiefiles.com/packages/lf20_q5pk6p1k.json"  background="transparent"  speed="1"  loop autoplay></lottie-player>
+                      </div>
+          <div className='signupform'>
+          <form method="POST">
             <h3> <b>Sign-Up</b> </h3>
-            <div className='animation'> <br/>
-<lottie-player src="https://assets2.lottiefiles.com/packages/lf20_q5pk6p1k.json"  background="transparent"  speed="1"  loop autoplay></lottie-player>
-</div>
-    <div class="mb-3">
-    <label for="exampleInputName1" class="form-label">Name</label>
-    <input type="name" name='name' value={User.name} onChange={handleInput} class="form-control" id="exampleInputName1" aria-describedby="nameHelp" required/>
-  </div>
-  <div class="mb-3">
-    <label for="exampleInputAge1" class="form-label">Age</label>
-    <input type='number' name='age' value={User.age} onChange={handleInput} class="form-control" id="exampleInputAge1" aria-describedby="ageHelp" required/>
-  </div>
-  <div class="mb-3">
-    <label for="exampleInputEmail1" class="form-label">Email</label>
-    <input type="email" name='email' value={User.email} onChange={handleInput} class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required/>
-  </div>
-  <div class="mb-3">
-    <label for="exampleInputPassword1" class="form-label">Password </label>
-    <input type={type} name='password' value={User.password} onChange={handleInput} class="form-control" id="exampleInputPassword1" required/><i onClick = {change} className={Class} id='icon'></i>
-  </div>
-  
-  
-  <button type="submit" onClick={postData} class="btn btn-primary">SignUp</button>
-</form>
 
+          <div class="mb-3">
+          <label for="exampleInputName1" class="form-label">Name</label>
+          <input type="name" name='name' value={User.name} onChange={handleInput} class="form-control" id="exampleInputName1" aria-describedby="nameHelp" required/>
+        </div>
+        <div class="mb-3">
+          <label for="exampleInputAge1" class="form-label">Age</label>
+          <input type='number' name='age' value={User.age} onChange={handleInput} class="form-control" id="exampleInputAge1" aria-describedby="ageHelp" required/>
+        </div>
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label">Email</label>
+          <input type="email" name='email' value={User.email} onChange={handleInput} class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required/>
+        </div>
+        <div class="mb-3">
+          <label for="exampleInputPassword1" class="form-label">Password </label>
+          <input type={type} name='password' value={User.password} onChange={handleInput} class="form-control" id="exampleInputPassword1" required/><i onClick = {change} className={Class} id='icon'></i>
+        </div>
+        
+        
+        <button type="submit" onClick={postData} class="btn btn-primary" id='signup-button'>SignUp</button>
+</form>
+          </div>
+            
+
+        </div>
         </div>
     )
 }

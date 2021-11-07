@@ -16,21 +16,21 @@ function App() {
     <div className="App">
       <Navbar/>
       <Route exact path = '/'>
-        <Home></Home>
+        <Home/>
       </Route>
       <Route path = '/profile'>
         <Profile></Profile>
       </Route>
       <Route path = '/SignUp'>
-        <Signup></Signup>
+        <Signup/>
       </Route>
       <Route path = '/LogIn'>
-        <Login></Login>
+        <Login/>
       </Route>
       <Route path = '/ContactUs'>
         <Contact/>
       </Route>
-      <Footer></Footer>
+      <Footer/>
     </div>
   );
 }

@@ -3,7 +3,7 @@ import { NavLink } from 'react-router-dom'
 
 function Footer() {
     return (
-       <div className='footer bg-light'>
+       <div className='footer bg-dark'>
            <div className='footer-logo'>
                 <h1>Task-App</h1>
                 <ul className='logo-list'>
@@ -36,7 +36,7 @@ function Footer() {
                     <NavLink className = 'footer-navlinks' to='/'>Home</NavLink>
                 </li>
                 <li>
-                    <NavLink className = 'footer-navlinks' to = '/Contact'>Contact </NavLink>
+                    <NavLink className = 'footer-navlinks' to = '/ContactUs'>Contact </NavLink>
                 </li>
                 <li>
                     <NavLink className = 'footer-navlinks' to = '/SignUp'>SignUp</NavLink>
