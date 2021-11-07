@@ -114,7 +114,7 @@ input{
 .signuppage{
   display: flex;
   justify-content: center;
-  height: 80vh;
+  min-height: 80vh;
 }
 .Signup{
   display: flex;
