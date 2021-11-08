@@ -44,11 +44,6 @@ function Profile() {
             </div>
 
     </div>
-    
-    <div class="container-fluid container1 text-center pt-5 " id='contact-container'>
-
-
-            </div>
         </div>
 
     )

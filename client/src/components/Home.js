@@ -54,10 +54,23 @@ function Home() {
 
     return (
         <>
+
         <div className={display}>
-            <h1>Welcome to <b id='nav-logo'>Task-App!</b></h1>
-            <h3>If you are new SignUp here - <NavLink className= 'nav-link active' to='/SignUp' >Sign Up</NavLink></h3>
-            <h3>If already a User Login here -  <NavLink className= 'nav-link active' to='/login' >Login</NavLink></h3>
+        <div className='home-animation'> <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+<lottie-player src= "https://assets5.lottiefiles.com/packages/lf20_puciaact.json"background="transparent"  speed=".5"   loop  autoplay></lottie-player> <br/></div>
+        <div>
+        <form className='text-align-center' method="POST">
+        <h2>Welcome to <b id='nav-logo'>Task-App!</b></h2>
+       
+  <div className="mb-3" >
+  <h3>If you are new SignUp here - <NavLink className= 'nav-link active' to='/SignUp' ><button className='btn btn-primary'>Signup</button></NavLink></h3>
+  </div>
+  <div className='mb-3'>
+  <h3>If already a User Login here -  <NavLink className= 'nav-link active' to='/login' ><button className='btn btn-primary'>Login</button></NavLink></h3>
+
+  </div>
+</form>
+        </div>
         </div>
         <div className={display2}>
             <h1>Welcome <span className='user-heading'> {User.name}</span></h1>

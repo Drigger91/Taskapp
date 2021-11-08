@@ -26,6 +26,9 @@ input{
   display: flex;
   height: 80vh;
 }
+.navlinks{
+  font-weight: 530;
+}
 
 .Login{
   padding : 5rem;
@@ -89,7 +92,6 @@ input{
 .mb-3{
   display: flex;
   flex-direction: row;
-  padding: 1rem;
   align-items: center;
   justify-content: center;
 }
@@ -98,11 +100,7 @@ input{
   border-left: none;
   border-right: none;
 }
-.mb-3 label{
-  padding: 1rem;
-  padding-top: 1.5rem;
-  font-size: larger;
-}
+
 .mb-3 label , i{
   font-weight: bolder;
 }
@@ -157,8 +155,8 @@ input{
   color: rgb(221, 209, 188);
 }
 .line{
-  width: 85%;
-  border: 1px rgb(221,209,200) solid;
+  width: 100%;
+  border: .5px rgb(221,209,200) solid;
   border-radius: 10px;
   margin-top: 0;
   opacity: 10!important;
@@ -175,7 +173,7 @@ input{
   color: rgb(255, 255, 255);
   font-weight: bold;
   margin: auto;
-  padding-right: 3rem;
+  padding-right: 2.3rem;
 }
 .logo-list li a:hover{
   cursor: pointer;
@@ -214,6 +212,7 @@ input{
 .card i {
   padding-right: .2rem;
 }
+/* contactpage */
 .contactpage{
   display: flex;
   align-items: center;
@@ -284,6 +283,7 @@ input{
 }
 
 #portfolio{
+  min-height: max-content;
   background-color: white;
 }
 #card-container{
@@ -300,17 +300,41 @@ input{
     justify-content: center;
   }
 }
-
+.home-animation{
+  height: 450px;
+  width: 450px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  margin: 1rem;
+}
 .home-container{
   display: flex;
   text-align: center;
   justify-content: center;
-  flex-direction: column;
-  min-height: 65vh;
+  flex-direction: row;
+  min-height: 75vh;
   scroll-behavior:smooth;
+  background-color: white;
+  align-items: center;
+  margin: auto;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  max-width: 65vw;
+  border-radius: 3%;
 }
 .home-container h1,h2,h3{
   padding: 2rem;
+}
+.home-container button{
+  margin-top: 1.2rem;
+}
+@media screen and (max-width : 780px) {
+  .home-animation{
+    display: none;
+  }
 }
 .profile-card{
   display: flex;

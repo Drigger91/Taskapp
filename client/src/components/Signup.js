@@ -59,7 +59,7 @@ function Signup() {
       <div className='signuppage'>
         <div className='Signup'>
                     <div className='animation'> <br/> <br/>
-                                <lottie-player src="https://assets2.lottiefiles.com/packages/lf20_q5pk6p1k.json"  background="transparent"  speed="1"  loop autoplay></lottie-player>
+                                <lottie-player src="https://assets2.lottiefiles.com/packages/lf20_q5pk6p1k.json"  background="transparent"  speed=".51"  loop autoplay></lottie-player>
                       </div>
           <div className='signupform'>
           <form method="POST">
