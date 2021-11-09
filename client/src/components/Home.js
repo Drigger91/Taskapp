@@ -18,12 +18,11 @@ function Home() {
         credentials: "include",
       });
       const data = await res.json();
-
+      setdisplay("d-none");
       setUser(data);
 
       if (res.status === 200) {
         setdisplay2("main-container");
-        setdisplay("d-none");
       }
     } catch (e) {
       console.log(e);
