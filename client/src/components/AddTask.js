@@ -12,6 +12,7 @@ function AddTask(props) {
      const addTask = async(e)=>{
         const {description , completed} = Task
         console.log(description , completed, 'desc',  'completed')
+        document.getElementById('addform').reset()
             const res = await fetch('/tasks' ,{
                 method : "POST" ,
                 headers :{
@@ -31,7 +32,7 @@ function AddTask(props) {
     return (
         
 <div className="task-input-card">
-    <form method="POST"> 
+    <form method="POST" id='addform'> 
   <div className="card-header">
     Add Task here!
   </div>
