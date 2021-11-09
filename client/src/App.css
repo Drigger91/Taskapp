@@ -351,13 +351,13 @@ input{
 .tasks{
   background-color: white;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
 }
 .task-card{
-  background-color: rgb(247, 247, 238);
-  min-width: 40vw;
+  background-color: rgb(212, 212, 168);
+  min-width: 30vw;
   margin: 1rem;
   padding: 2rem;
   border : 1px solid black;
