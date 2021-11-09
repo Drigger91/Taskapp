@@ -5,7 +5,6 @@ import login from "../Images/lsvg.png";
 import { UserContext } from "../App";
 function Login() {
   const history = useHistory();
-  const { state, dispatch } = useContext(UserContext);
   const [User, setUser] = useState({ email: "", password: "" });
   const [type, settype] = useState("password");
   const [Class, setClass] = useState("bi bi-eye-slash");
@@ -41,10 +40,6 @@ function Login() {
       if (!data || res.status == 500) {
         return window.alert("Invalid credentitials");
       } else {
-        dispatch({
-          type: "USER",
-          payload: true,
-        });
         window.alert("Login Successfull");
         history.push("/");
       }

@@ -4,6 +4,7 @@ import Tasks from "./Tasks";
 
 function Home() {
   const history = useHistory();
+
   const [User, setUser] = useState({});
   const [display, setdisplay] = useState("home-container");
   const [display2, setdisplay2] = useState("d-none");
@@ -31,6 +32,22 @@ function Home() {
   useEffect(() => {
     callPage();
   }, []);
+
+  const LogOut = async (e) => {
+    try {
+      const res = await fetch("/users/logout", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        credentials: "include",
+      });
+      const data = await res.json();
+    } catch (error) {
+      console.log(error);
+    }
+    history.push("/login", { replace: true });
+  };
 
   return (
     <>
@@ -76,6 +93,10 @@ function Home() {
         <h1>
           Welcome <span className="user-heading"> {User.name}</span>
         </h1>
+        <button className="btn btn-primary" onClick={LogOut}>
+          {" "}
+          LogOut
+        </button>
         <div className="task-ui">
           <Tasks owner={User._id}></Tasks>
         </div>
