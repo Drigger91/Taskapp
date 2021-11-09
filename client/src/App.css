@@ -351,12 +351,12 @@ input{
 .tasks{
   background-color: white;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 .task-card{
-  background-color: rgb(212, 212, 168);
+  background-color: rgb(217, 222, 231);
   min-width: 30vw;
   margin: 1rem;
   padding: 2rem;
@@ -395,4 +395,12 @@ input{
   background-color: white;
   align-items: center;
   margin: auto;
+}
+
+.task-row-column{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }

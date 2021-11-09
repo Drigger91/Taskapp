@@ -31,7 +31,7 @@ function Tasks(props) {
     <div className="tasks">
       <AddTask triggerFetch={() => callTasks()} owner={props.owner} />
 
-      <div>{decodeTask(tasks)}</div>
+      <div className='task-row-column'>{decodeTask(tasks)}</div>
     </div>
   );
 }
