@@ -58,7 +58,7 @@ function Taskui(props) {
     return (
         <>
         <div className='task-card'>
-            <span><button className='btn' onClick={editTask}><i class="bi bi-pencil-square"></i>Edit Task</button></span>
+            <span><button className='btn' id='edit' onClick={editTask}><i class="bi bi-pencil-square"></i>Edit Task</button></span>
             <h3 className='task-heading'>
                 {props.task.description}
             </h3>

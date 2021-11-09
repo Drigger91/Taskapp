@@ -355,14 +355,21 @@ h3 {
   justify-content: center;
 }
 .task-card {
-  background-color: rgb(68, 66, 71);
-  color: rgb(23, 211, 211);
+  background-color: rgb(102, 99, 107);
+  color: rgb(25, 240, 240);
   min-width: 30vw;
   margin: 1rem;
   padding: 2rem;
   border: 1px solid black;
   font-family: "Montserrat", sans-serif; 
-  font-weight: 530;
+  font-weight: 540;
+}
+#edit{
+    color: rgb(25, 240, 240);
+}
+#edit:hover{
+  cursor: pointer;
+  
 }
 @media screen and (max-width: 800px) {
   .tasks {
