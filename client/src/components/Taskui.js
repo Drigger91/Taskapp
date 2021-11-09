@@ -59,7 +59,7 @@ function Taskui(props) {
         <>
         <div className='task-card'>
             <span><button className='btn' onClick={editTask}><i class="bi bi-pencil-square"></i>Edit Task</button></span>
-            <h3 className='user-heading'>
+            <h3 className='task-heading'>
                 {props.task.description}
             </h3>
             <p> Status : {props.task.completed === 'true'|| props.task.completed === "True"? 'completed' : 'pending'}</p>
