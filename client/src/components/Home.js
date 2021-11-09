@@ -18,9 +18,10 @@ function Home() {
       
             })
             const data = await res.json()
-            setdisplay2('home-container')
-            setdisplay('d-none')
+            
             setUser(data)
+            setdisplay2('main-container')
+            setdisplay('d-none')
             if(res.status===500){
                 console.log(res.error)
             }
