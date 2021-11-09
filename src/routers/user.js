@@ -44,7 +44,7 @@ router.post("/users/logout", auth, async (req, res) => {
     req.user.tokens = req.user.tokens.filter((token) => {
       return token.token !== req.token;
     });
-    res.clearCookie("jwtoken");
+    res.clearCookie("jwtoken", { path: "/" });
     await req.user.save();
 
     res.status(200).send("Logged out");
