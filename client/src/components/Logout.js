@@ -28,14 +28,7 @@ function Logout() {
     LogOut();
   }, []);
 
-  return (
-    <div>
-      <button className="btn btn-primary" onClick={LogOut}>
-        {" "}
-        logout
-      </button>
-    </div>
-  );
+  return <div></div>;
 }
 
 export default Logout;
