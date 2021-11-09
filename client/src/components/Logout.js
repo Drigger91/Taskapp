@@ -1,4 +1,4 @@
-import React , {useContext , useEffect} from "react";
+import React, { useContext, useEffect } from "react";
 import { useHistory } from "react-router-dom";
 import { UserContext } from "../App";
 
@@ -17,16 +17,16 @@ function Logout() {
       });
       const data = await res.json();
       if (res) {
-        dispatch();
+        dispatch({ type: "USER", payload: false });
       }
     } catch (error) {
       console.log(error);
     }
-    history.push("/login");
+    history.push("/login", { replace: true });
   };
   useEffect(() => {
-      LogOut();
-  }, [])
+    LogOut();
+  }, []);
 
   return (
     <div>
