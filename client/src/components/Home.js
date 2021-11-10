@@ -21,12 +21,13 @@ function Home() {
         },
         credentials: "include",
       });
-      setdisplay("d-none");
+      
       setloading(true);
       const data = await res.json();
       setUser(data);
 
       if (res.status === 200) {
+        setdisplay("d-none");
         setdisplay2("main-container");
       }
     } catch (e) {
