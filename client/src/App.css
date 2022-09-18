@@ -355,8 +355,8 @@ h3 {
   justify-content: center;
 }
 .task-card {
-  background-color: rgb(70, 68, 71);
-  color: rgb(25, 240, 240);
+  background-color: rgb(240, 240, 240);
+  color: rgb(1, 43, 43);
   min-width: 30vw;
   margin: 1rem;
   padding: 2rem;
@@ -365,7 +365,7 @@ h3 {
   font-weight: 540;
 }
 #edit{
-    color: rgb(25, 240, 240);
+    color: rgb(1, 43, 43);
 }
 #edit:hover{
   cursor: pointer;
